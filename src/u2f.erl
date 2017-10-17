@@ -3,7 +3,15 @@
 %% API exports
 -export([challenge/0,
          register_response/4,
-         sign_response/8]).
+         sign_response/8,
+         validate_client_data/4,
+         validate_sign_data/2,
+         parse_client_data/1,
+         parse_reg_data/1,
+         cert_length/1,
+         parse_sign_data/1,
+         signed_data/2,
+         cert_pub_key/1]).
 
 -include_lib("public_key/include/public_key.hrl").
 
